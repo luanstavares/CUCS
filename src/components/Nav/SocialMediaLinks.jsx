@@ -8,7 +8,9 @@ export default function SocialMediaLinks() {
       sx={{ display: `flex`, alignItems: `center` }}
       direction="row"
       spacing={2.5}>
-      <Link to="https://www.instagram.com/cucodingsociety/">
+      <Link
+        target="_blank"
+        to="https://www.instagram.com/cucodingsociety/">
         <Avatar
           variant="square"
           sx={{
@@ -19,7 +21,9 @@ export default function SocialMediaLinks() {
           alt=""
         />
       </Link>
-      <Link to="https://discord.gg/QKarfQah">
+      <Link
+        target="_blank"
+        to="https://discord.gg/QKarfQah">
         <Avatar
           variant="square"
           sx={{
@@ -30,7 +34,9 @@ export default function SocialMediaLinks() {
           alt=""
         />
       </Link>
-      <Link to="https://github.com/v1nshul/CUCS">
+      <Link
+        target="_blank"
+        to="https://github.com/v1nshul/CUCS">
         <Avatar
           variant="square"
           sx={{
