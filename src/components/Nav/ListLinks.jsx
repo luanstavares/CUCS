@@ -16,7 +16,7 @@ export function ListLinks() {
   return (
     <Stack
       direction="row"
-      spacing={3}>
+      spacing={4}>
       <Link
         style={{ textDecoration: "none" }}
         to="/">

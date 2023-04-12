@@ -16,7 +16,7 @@ import Contact from "./pages/Contact/Contact";
 
 const theme = createTheme({
   palette: {
-    primary: { main: "#0687DE" },
+    primary: { main: "#0098FF" },
     secondary: { main: "#DA2C38" },
 
     text: { primary: "#FDFFFC" },
@@ -24,6 +24,9 @@ const theme = createTheme({
   components: {
     MuiButton: {
       styleOverrides: {
+        contained: {
+          backgroundColor: "#0098FF",
+        },
         root: {
           color: "#FDFFFC",
         },
