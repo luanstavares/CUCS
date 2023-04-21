@@ -1,0 +1,33 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.item {
+  opacity: 0.4;
+  position: absolute;
+  z-index: -20;
+}
+
+.binary {
+  top: 40%;
+  left: 15%;
+}
+.code {
+  top: 20%;
+  left: 80%;
+}
+.network {
+  top: 60%;
+  left: 25%;
+}
+.flowTree {
+  top: 40%;
+  left: 75%;
+}
+.brackets {
+  top: 60%;
+  left: 90%;
+}

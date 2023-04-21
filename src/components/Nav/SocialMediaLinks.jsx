@@ -14,8 +14,8 @@ export default function SocialMediaLinks() {
         <Avatar
           variant="square"
           sx={{
-            width: `20px`,
-            height: `20px`,
+            width: `15px`,
+            height: `15px`,
           }}
           src="instagram.svg"
           alt=""
@@ -27,8 +27,8 @@ export default function SocialMediaLinks() {
         <Avatar
           variant="square"
           sx={{
-            width: `30px`,
-            height: `30px`,
+            width: `25px`,
+            height: `25px`,
           }}
           src="discord.svg"
           alt=""
@@ -40,8 +40,8 @@ export default function SocialMediaLinks() {
         <Avatar
           variant="square"
           sx={{
-            width: `20px`,
-            height: `20px`,
+            width: `15px`,
+            height: `15px`,
           }}
           src="github.svg"
           alt=""

@@ -10,7 +10,7 @@ import {
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Error from "./pages/Error/Error";
 import Society from "./pages/Society/Society";
-import Root from "./routes/root";
+import Root from "./routes/Root";
 import Home from "./pages/Home/Home";
 import Contact from "./pages/Contact/Contact";
 
