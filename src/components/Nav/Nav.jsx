@@ -58,7 +58,7 @@ export default function Nav() {
     if (path === "/") {
       return "Home";
     } else if (path === "/society") {
-      return "The society";
+      return "The Society";
     } else if (path === "/contact") {
       return "Contact";
     } else {
