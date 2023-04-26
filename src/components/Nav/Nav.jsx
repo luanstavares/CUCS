@@ -3,7 +3,6 @@ import * as styles from "./Nav.module.css";
 import { ListLinks } from "./ListLinks";
 import Logo from "../Logo/Logo";
 import SocialMediaLinks from "./SocialMediaLinks";
-import { ParallaxLayer } from "@react-spring/parallax";
 
 export default function Nav() {
   return (
