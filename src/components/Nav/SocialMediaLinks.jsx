@@ -2,11 +2,11 @@ import { Avatar, Stack } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function SocialMediaLinks() {
+export default function SocialMediaLinks({ direction = "row" }) {
   return (
     <Stack
-      sx={{ display: `flex`, alignItems: `center` }}
-      direction="row"
+      sx={{ display: `flex`, alignItems: `center`, justifyContent: `center` }}
+      direction={direction}
       spacing={2.5}>
       <Link
         target="_blank"
