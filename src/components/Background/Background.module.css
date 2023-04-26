@@ -4,11 +4,11 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: -20;
 }
 .item {
   opacity: 0.4;
   position: absolute;
-  z-index: -20;
 }
 
 .binary {
