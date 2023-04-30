@@ -10,20 +10,23 @@ import {
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Error from "./pages/Error/Error";
 import Society from "./pages/Society/Society";
-import Root from "./routes/root";
+import Root from "./routes/Root";
 import Home from "./pages/Home/Home";
 import Contact from "./pages/Contact/Contact";
 
 const theme = createTheme({
   palette: {
-    primary: { main: "#0687DE" },
+    primary: { main: "#0098FF" },
     secondary: { main: "#DA2C38" },
-
+    mode: "dark",
     text: { primary: "#FDFFFC" },
   },
   components: {
     MuiButton: {
       styleOverrides: {
+        contained: {
+          backgroundColor: "#0098FF",
+        },
         root: {
           color: "#FDFFFC",
         },

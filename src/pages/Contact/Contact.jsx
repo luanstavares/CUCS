@@ -1,5 +1,95 @@
 import React from "react";
+import {
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Typography,
+  Container,
+  Grid,
+} from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
-  return <div>Contact</div>;
+  const cardItems = [
+    {
+      title: "discord",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      component: "img",
+      href: "https://discord.gg/QKarfQah",
+      height: 250,
+      image: "/discordQR.png",
+      alt: "Discord QR Code",
+    },
+    {
+      title: "Instagram",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      component: "img",
+      href: "https://www.instagram.com/cucodingsociety/",
+      height: 250,
+      image: "/instagramQR.JPG",
+      alt: "Instagram QR Code",
+    },
+  ];
+
+  return (
+    <>
+      <Container
+        sx={{ marginBottom: "100px" }}
+        fixed>
+        <Typography
+          textAlign={"center"}
+          fontWeight={700}
+          margin={"100px 0"}
+          variant="h1">
+          Contact
+        </Typography>
+        <Grid
+          container
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          spacing={7}>
+          {cardItems.map((cardItem, index) => (
+            <Grid
+              item
+              key={index}>
+              <Card sx={{ maxWidth: 250 }}>
+                <CardActionArea>
+                  <Link
+                    style={{ textDecoration: "none" }}
+                    target="_blank"
+                    to={cardItem.href}>
+                    <CardMedia
+                      height={cardItem.height}
+                      component={cardItem.component}
+                      image={cardItem.image}
+                      alt={cardItem.title}
+                    />
+                    <CardContent>
+                      <Typography
+                        sx={{ textTransform: "capitalize" }}
+                        gutterBottom
+                        variant="h5"
+                        fontWeight={700}
+                        component="div">
+                        {cardItem.title}
+                      </Typography>
+                      <Typography
+                        variant="body2"
+                        color="text.secondary">
+                        {cardItem.description}
+                      </Typography>
+                    </CardContent>
+                  </Link>
+                </CardActionArea>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </>
+  );
 }

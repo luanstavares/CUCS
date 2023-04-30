@@ -2,40 +2,46 @@ import { Avatar, Stack } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function SocialMediaLinks() {
+export default function SocialMediaLinks({ direction = "row" }) {
   return (
     <Stack
-      sx={{ display: `flex`, alignItems: `center` }}
-      direction="row"
+      sx={{ display: `flex`, alignItems: `center`, justifyContent: `center` }}
+      direction={direction}
       spacing={2.5}>
-      <Link to="https://www.instagram.com/cucodingsociety/">
+      <Link
+        target="_blank"
+        to="https://www.instagram.com/cucodingsociety/">
         <Avatar
           variant="square"
           sx={{
-            width: `20px`,
-            height: `20px`,
+            width: `15px`,
+            height: `15px`,
           }}
           src="instagram.svg"
           alt=""
         />
       </Link>
-      <Link to="https://discord.gg/QKarfQah">
+      <Link
+        target="_blank"
+        to="https://discord.gg/QKarfQah">
         <Avatar
           variant="square"
           sx={{
-            width: `30px`,
-            height: `30px`,
+            width: `25px`,
+            height: `25px`,
           }}
           src="discord.svg"
           alt=""
         />
       </Link>
-      <Link to="https://github.com/v1nshul/CUCS">
+      <Link
+        target="_blank"
+        to="https://github.com/v1nshul/CUCS">
         <Avatar
           variant="square"
           sx={{
-            width: `20px`,
-            height: `20px`,
+            width: `15px`,
+            height: `15px`,
           }}
           src="github.svg"
           alt=""
