@@ -4,14 +4,13 @@ import { ListLinks } from "./ListLinks";
 import Logo from "../Logo/Logo";
 import SocialMediaLinks from "./SocialMediaLinks";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { Drawer, Grid, Typography } from "@mui/material";
+import { Drawer, Grid, Typography, Divider } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { Box } from "@mui/system";
 import Button from "@mui/material/Button";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
-import { Divider } from "@mui/material";
 import { useLocation } from "react-router-dom";
 
 export default function Nav() {

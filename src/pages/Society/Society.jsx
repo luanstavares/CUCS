@@ -96,28 +96,26 @@ export default function Society() {
               item
               key={index}>
               <Card sx={{ maxWidth: 250 }}>
-                <CardActionArea>
-                  <CardMedia
-                    height="150"
-                    component="img"
-                    image={cardItem.image}
-                    alt={cardItem.title}
-                  />
-                  <CardContent>
-                    <Typography
-                      gutterBottom
-                      variant="h5"
-                      fontWeight={700}
-                      component="div">
-                      {cardItem.title}
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      color="text.secondary">
-                      {cardItem.description}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
+                <CardMedia
+                  height="150"
+                  component="img"
+                  image={cardItem.image}
+                  alt={cardItem.title}
+                />
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant="h5"
+                    fontWeight={700}
+                    component="div">
+                    {cardItem.title}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="text.secondary">
+                    {cardItem.description}
+                  </Typography>
+                </CardContent>
               </Card>
             </Grid>
           ))}
@@ -140,38 +138,39 @@ export default function Society() {
             <Grid
               item
               key={index}>
-              <Card sx={{ maxWidth: 325 }}>
-                <CardActionArea>
-                  <CardMedia
-                    height="300"
-                    component="img"
-                    image={committeeItem.image}
-                    alt={committeeItem.position}
-                  />
-                  <CardContent>
-                    <Typography
-                      gutterBottom
-                      variant="h5"
-                      fontWeight={700}
-                      component="div">
-                      {committeeItem.name}
-                    </Typography>
-                    <Typography
-                      gutterBottom
-                      variant="h7"
-                      fontWeight={700}
-                      component="div">
-                      {committeeItem.position}
-                    </Typography>
+              <Card
+                sx={{
+                  maxWidth: 325,
+                }}>
+                <CardMedia
+                  height="300"
+                  component="img"
+                  image={committeeItem.image}
+                  alt={committeeItem.position}
+                />
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant="h5"
+                    fontWeight={700}
+                    component="div">
+                    {committeeItem.name}
+                  </Typography>
+                  <Typography
+                    gutterBottom
+                    variant="h7"
+                    fontWeight={700}
+                    component="div">
+                    {committeeItem.position}
+                  </Typography>
 
-                    <Typography
-                      marginTop={"20px"}
-                      variant="body2"
-                      color="text.secondary">
-                      {committeeItem.description}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
+                  <Typography
+                    marginTop={"20px"}
+                    variant="body2"
+                    color="text.secondary">
+                    {committeeItem.description}
+                  </Typography>
+                </CardContent>
               </Card>
             </Grid>
           ))}
