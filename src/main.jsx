@@ -46,14 +46,13 @@ const router = createBrowserRouter(
         path="/"
         element={<Home />}></Route>
       <Route
-        path="/society"
+        path="society"
         element={<Society />}></Route>
       <Route
-        path="/contact"
+        path="contact"
         element={<Contact />}></Route>
     </Route>
-  ),
-  { basename: `${process.env.APP_URL}/CUCS` || "https://cucs.vercel.app/CUCS" }
+  )
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
