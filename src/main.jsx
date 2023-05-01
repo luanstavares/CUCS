@@ -38,12 +38,12 @@ const theme = createTheme({
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route
-      path="/CUCS"
+      path="/CUCS/"
       element={<Root />}
       ErrorBoundary={Error}>
       <Route
         index
-        path="/CUCS"
+        path="/CUCS/"
         element={<Home />}></Route>
       <Route
         path="/CUCS/society"
