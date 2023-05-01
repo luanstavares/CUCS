@@ -11,28 +11,28 @@ export default function Society() {
       name: "Vanshul Kumar",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      image: "/vanshul.png",
+      image: "vanshul.png",
     },
     {
       position: "Inclusion Officer",
       name: "John",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      image: "/john.png",
+      image: "john.png",
     },
     {
       position: "Social Media Coordinator",
       name: "Penny Mwaura",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      image: "/penny.png",
+      image: "penny.png",
     },
     {
       position: "Tresurer",
       name: "Bandhan Bhaliya",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      image: "/bandhan.png",
+      image: "bandhan.png",
     },
   ];
 
@@ -41,37 +41,37 @@ export default function Society() {
       title: "LeetCode",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      image: "/leetcode.png",
+      image: "leetcode.png",
     },
     {
       title: "Tech Talk",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      image: "/faang.jpeg",
+      image: "faang.jpeg",
     },
     {
       title: "Coding Support",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      image: "/codingSupport.webp",
+      image: "codingSupport.webp",
     },
     {
       title: "Chess Matches",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      image: "/chess.jpeg",
+      image: "chess.jpeg",
     },
     {
       title: "Discord",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      image: "/discord.png",
+      image: "discord.png",
     },
     {
       title: "Socials",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      image: "/social.jpeg",
+      image: "social.jpeg",
     },
   ];
 

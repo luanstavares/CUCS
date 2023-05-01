@@ -18,19 +18,19 @@ export function ListLinks({ spacing = 4, direction = "row", type = "button" }) {
       to: "/",
       text: "Home",
       icon: <HomeRoundedIcon />,
-      path: "/",
+      path: "/CUCS/",
     },
     {
       to: "/society",
       text: "The society",
       icon: <Groups2Icon />,
-      path: "/society",
+      path: "/CUCS/society",
     },
     {
       to: "/contact",
       text: "Contact",
       icon: <ContactPageIcon />,
-      path: "/contact",
+      path: "/CUCS/contact",
     },
   ];
 

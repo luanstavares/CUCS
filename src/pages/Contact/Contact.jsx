@@ -19,7 +19,7 @@ export default function Contact() {
       component: "img",
       href: "https://discord.gg/QKarfQah",
       height: 250,
-      image: "/discordQR.png",
+      image: "discordQR.png",
       alt: "Discord QR Code",
     },
     {
@@ -29,7 +29,7 @@ export default function Contact() {
       component: "img",
       href: "https://www.instagram.com/cucodingsociety/",
       height: 250,
-      image: "/instagramQR.JPG",
+      image: "instagramQR.JPG",
       alt: "Instagram QR Code",
     },
   ];
