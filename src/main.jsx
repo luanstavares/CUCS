@@ -38,21 +38,22 @@ const theme = createTheme({
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route
-      path="/CUCS/"
+      path="/"
       element={<Root />}
       ErrorBoundary={Error}>
       <Route
         index
-        path="/CUCS/"
+        path="/"
         element={<Home />}></Route>
       <Route
-        path="/CUCS/society"
+        path="/society"
         element={<Society />}></Route>
       <Route
-        path="/CUCS/contact"
+        path="/contact"
         element={<Contact />}></Route>
     </Route>
-  )
+  ),
+  { basename: "/CUCS" }
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
