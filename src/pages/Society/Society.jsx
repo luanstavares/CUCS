@@ -3,8 +3,11 @@ import { Container, Typography } from "@mui/material";
 import { Card, CardActionArea, CardContent, CardMedia } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import * as styles from "./Society.module.css";
-
+import { useTheme } from "@emotion/react";
+import useMediaQuery from "@mui/material/useMediaQuery";
 export default function Society() {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up("sm"));
   const committeeItems = [
     {
       position: "President",
@@ -82,7 +85,7 @@ export default function Society() {
           textAlign={"center"}
           fontWeight={700}
           margin={"100px 0"}
-          variant="h1">
+          variant={matches ? "h1" : "h3"}>
           Activities
         </Typography>
         <Grid
@@ -105,7 +108,7 @@ export default function Society() {
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant="h5"
+                    variant={matches ? "h5" : "h6"}
                     fontWeight={700}
                     component="div">
                     {cardItem.title}
@@ -124,7 +127,7 @@ export default function Society() {
           textAlign={"center"}
           fontWeight={700}
           margin={"150px 0"}
-          variant="h1">
+          variant={matches ? "h1" : "h3"}>
           Committee
         </Typography>
         <Grid
@@ -151,7 +154,7 @@ export default function Society() {
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant="h5"
+                    variant={matches ? "h5" : "h6"}
                     fontWeight={700}
                     component="div">
                     {committeeItem.name}

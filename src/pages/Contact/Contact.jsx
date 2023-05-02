@@ -9,8 +9,12 @@ import {
   Grid,
 } from "@mui/material";
 import { Link } from "react-router-dom";
+import { useTheme } from "@emotion/react";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function Contact() {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up("sm"));
   const cardItems = [
     {
       title: "discord",
@@ -43,7 +47,7 @@ export default function Contact() {
           textAlign={"center"}
           fontWeight={700}
           margin={"100px 0"}
-          variant="h1">
+          variant={matches ? "h1" : "h2"}>
           Contact
         </Typography>
         <Grid
@@ -72,7 +76,7 @@ export default function Contact() {
                       <Typography
                         sx={{ textTransform: "capitalize" }}
                         gutterBottom
-                        variant="h5"
+                        variant={matches ? "h5" : "h6"}
                         fontWeight={700}
                         component="div">
                         {cardItem.title}
