@@ -56,23 +56,29 @@ export default function Home() {
               textAlign={"center"}
               fontWeight={700}
               variant={matches ? "body1" : "h5"}>
-              Our Goal
+              Our Goal 🎯
             </Typography>
             <Typography
-              fontWeight={500}
+              fontStyle={"italic"}
+              fontWeight={300}
               paddingTop={"5em"}
               textAlign={"justify"}
               variant={matches ? "body2" : "subtitle1"}>
-              “Lorem ipsum dolor sit amet consectetur. Dictum diam sagittis
-              nulla placerat urna. Suspendisse non imperdiet malesuada mauris
-              risus massa tincidunt quis sodales. Cursus ac pretium augue lacus
-              integer. Mattis mauris sit egestas nibh habitant condimentum in.
-              Duis id ipsum consequat.”
+              "As programmers, we have the power to shape the world around us.
+              Let's use our skills not just for personal gain, but to create
+              positive change and make a{" "}
+              <span
+                style={{
+                  color: theme.palette.primary.main,
+                }}>
+                meaningful impact on society
+              </span>
+              ."
             </Typography>
             <Typography
               paddingTop={"5em"}
               textAlign={"right"}
-              fontWeight={500}
+              fontWeight={400}
               variant={matches ? "subtitle2" : "h6"}>
               CS President.
             </Typography>
