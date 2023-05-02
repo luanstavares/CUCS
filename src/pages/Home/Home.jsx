@@ -1,23 +1,36 @@
 import React from "react";
 import * as styles from "./Home.module.css";
-import { Button, Typography, useTheme, Box } from "@mui/material";
+import {
+  Button,
+  Typography,
+  useTheme,
+  Box,
+  Container,
+  Grid,
+} from "@mui/material";
 import { ArrowForward } from "@mui/icons-material";
 import { Card } from "../../components/Card/Card";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function Home() {
   const theme = useTheme();
-
+  const matches = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <>
-      <div className={styles.main}>
-        <Box
+      <Container
+        maxWidth="md"
+        sx={{ marginBottom: "100px" }}
+        fixed>
+        <Grid
+          sx={{ marginTop: { xs: "50px", sm: "100px" } }}
           textAlign="center"
-          className={styles.content}>
+          justifyContent="space-between"
+          alignItems="center">
           <Typography
             textAlign={"center"}
             color="textPrimary"
             fontWeight={700}
-            variant="h1">
+            variant={matches ? "h3" : "h1"}>
             Welcome to <br />
             <span style={{ color: theme.palette.primary.main }}>
               Coding Society!
@@ -25,42 +38,53 @@ export default function Home() {
           </Typography>
 
           <Button
-            sx={{ marginTop: "5rem" }}
+            sx={{
+              marginTop: { xs: "3rem", sm: "5rem" },
+              marginBottom: "5rem",
+            }}
             endIcon={<ArrowForward />}
             variant="contained"
             target="_blank"
+            size={matches ? "small" : "large"}
             href="https://www.yoursu.org/activities/societies/join/8196/">
             Join Us
           </Button>
 
           <Card>
             <Typography
+              paddingTop={"1em"}
               textAlign={"center"}
               fontWeight={700}
-              variant="h5">
-              Our Goal
+              variant={matches ? "body1" : "h5"}>
+              Our Goal 🎯
             </Typography>
             <Typography
-              fontWeight={500}
-              paddingTop={"5rem"}
+              fontStyle={"italic"}
+              fontWeight={300}
+              paddingTop={"5em"}
               textAlign={"justify"}
-              variant="subtitle1">
-              “Lorem ipsum dolor sit amet consectetur. Dictum diam sagittis
-              nulla placerat urna. Suspendisse non imperdiet malesuada mauris
-              risus massa tincidunt quis sodales. Cursus ac pretium augue lacus
-              integer. Mattis mauris sit egestas nibh habitant condimentum in.
-              Duis id ipsum consequat.”
+              variant={matches ? "body2" : "subtitle1"}>
+              "As programmers, we have the power to shape the world around us.
+              Let's use our skills not just for personal gain, but to create
+              positive change and make a{" "}
+              <span
+                style={{
+                  color: theme.palette.primary.main,
+                }}>
+                meaningful impact on society
+              </span>
+              ."
             </Typography>
             <Typography
-              paddingTop={"5rem"}
+              paddingTop={"5em"}
               textAlign={"right"}
-              fontWeight={500}
-              variant="h6">
+              fontWeight={400}
+              variant={matches ? "subtitle2" : "h6"}>
               CS President.
             </Typography>
           </Card>
-        </Box>
-      </div>
+        </Grid>
+      </Container>
     </>
   );
 }

@@ -73,7 +73,7 @@ export default function Nav() {
         justifyContent="space-between"
         alignItems="center">
         <Grid item>
-          <Logo />
+          <Logo size={matches ? "70" : "90"} />
         </Grid>
 
         {matches ? (
